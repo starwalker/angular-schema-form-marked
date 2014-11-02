@@ -3,7 +3,7 @@
   "main": [
     "bootstrap-marked.min.js"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     "NetworNT",
     "Steve Hu <stevehu@gmail.com>"
@@ -19,7 +19,7 @@
     "json-schema",
     "schema",
     "marked",
-    "angular-marked"
+    "angular-marked",
     "angular-schmea-form-marked"
   ],
   "license": "MIT",
