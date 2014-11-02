@@ -1,4 +1,4 @@
-angular.module("schemaForm").run(["$templateCache", function($templateCache) {$templateCache.put("directives/decorators/bootstrap/marked/marked.html","<div class=\"form-group\" ng-class=\"{\'has-error\': hasError()}\">\n  <label class=\"control-label\" ng-show=\"showTitle()\">{{form.title}}</label>\n  <div marked=\"$$value$$\"></div>\n</div>\n");}]);
+angular.module("schemaForm").run(["$templateCache", function($templateCache) {$templateCache.put("directives/decorators/bootstrap/marked/marked.html","<div marked=\"$$value$$\"></div>");}]);
 angular.module('schemaForm-marked', ['schemaForm', 'hc.marked']).config(
 ['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider', 'markedProvider',
   function(schemaFormProvider,  schemaFormDecoratorsProvider, sfPathProvider, markedProvider) {
