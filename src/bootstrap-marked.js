@@ -5,7 +5,7 @@ angular.module('schemaForm-marked', ['schemaForm', 'hc.marked']).config(
     markedProvider.setOptions({gfm: true});
 
     var marked = function(name, schema, options) {
-    if (schema.type === 'string' && schema.format == 'markdown') {
+    if (schema.type === 'marked') {
       var f = schemaFormProvider.stdFormObj(name, schema, options);
       f.key  = options.path;
       f.type = 'marked';

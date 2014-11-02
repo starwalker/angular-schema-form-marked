@@ -58,24 +58,9 @@ mapping.
 
 | Schema             |   Default Form type  |
 |:-------------------|:------------:|
-| "type": "string" and "format": "markdown"   |   marked   |
+| "type": "string"   |   marked   |
 
 
 Options
 -------
-The `marked` form takes one option, `markedOptions`. This is an object with any
-and all options availible to marked. A full list of these can be found [here](https://github.com/chjj/marked).
-
-### Example
-This example replaces the standard toolbar with one we choose.
-
-```javascript
-{
-  "key": "summary",
-  "markedOptions": {
-    "gfm": true,
-    "tables" : true
-  }
-},
-```
-
+angular-marked has default option that can be configured in the module. Currently, the only option is {gfm: true}
