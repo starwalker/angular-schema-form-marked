@@ -1,7 +1,7 @@
 {
-  "name": "angular-schema-form-tinymce",
+  "name": "angular-schema-form-marked",
   "main": [
-    "bootstrap-tinymce.min.js"
+    "bootstrap-marked.min.js"
   ],
   "version": "0.1.0",
   "authors": [
