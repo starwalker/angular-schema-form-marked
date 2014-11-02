@@ -20,13 +20,13 @@ gulp.task('minify', function() {
                   }))
                   .pipe(templateCache({
                     module: 'schemaForm',
-                    root: 'directives/decorators/bootstrap/tinymce/'
+                    root: 'directives/decorators/bootstrap/marked/'
                   }))
     );
   stream.queue(gulp.src('./src/*.js'));
 
   stream.done()
-        .pipe(concat('bootstrap-tinymce.min.js'))
+        .pipe(concat('bootstrap-marked.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.'));
 
@@ -38,13 +38,13 @@ gulp.task('non-minified-dist', function() {
               gulp.src('./src/*.html')
                   .pipe(templateCache({
                     module: 'schemaForm',
-                    root: 'directives/decorators/bootstrap/tinymce/'
+                    root: 'directives/decorators/bootstrap/marked/'
                   }))
     );
   stream.queue(gulp.src('./src/*.js'));
 
   stream.done()
-        .pipe(concat('bootstrap-tinymce.js'))
+        .pipe(concat('bootstrap-marked.js'))
         .pipe(gulp.dest('.'));
 
 });

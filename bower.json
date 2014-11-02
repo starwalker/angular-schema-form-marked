@@ -5,8 +5,8 @@
   ],
   "version": "0.1.0",
   "authors": [
-    "Textalk",
-    "Denis Dervisevic <denis@dervisevic.se>"
+    "NetworNT",
+    "Steve Hu <stevehu@gmail.com>"
   ],
   "moduleType": [
     "globals"
@@ -17,7 +17,10 @@
     "form",
     "json",
     "json-schema",
-    "schema"
+    "schema",
+    "marked",
+    "angular-marked"
+    "angular-schmea-form-marked"
   ],
   "license": "MIT",
   "ignore": [
@@ -28,11 +31,11 @@
     "coverage"
   ],
   "dependencies": {
-    "tx-tinymce": ">= 0.0.5",
-    "tinymce": ">= 4.0.0"
+    "angular-marked": ">= 0.0.4",
+    "marked": ">= 0.3.2"
   },
   "devDependencies": {
-    "angular-schema-form": ">= 0.7",
+    "angular-schema-form": ">= 0.7.6",
     "angular-mocks": ">= 1.2"
   }
 }
