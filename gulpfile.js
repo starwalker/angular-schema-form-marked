@@ -1,6 +1,7 @@
 /* global require */
 
 var gulp = require('gulp');
+var webserver = require('gulp-webserver');
 
 var templateCache = require('gulp-angular-templatecache');
 var minifyHtml = require('gulp-minify-html');
@@ -62,4 +63,13 @@ gulp.task('default', [
 
 gulp.task('watch', function() {
   gulp.watch('./src/**/*', ['default']);
+});
+
+gulp.task('webserver', function() {
+  gulp.src('.')
+    .pipe(webserver({
+      livereload: true,
+      port: 8001,
+      open: true
+    }));
 });
